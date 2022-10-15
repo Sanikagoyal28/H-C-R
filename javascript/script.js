@@ -129,6 +129,10 @@ function animate() {
     position -= 5;
     o -= 5;
     carDistance--;
+    if (position < 0) {
+      position = 0;
+      cX=15;
+    }
   }
   carMove(A[o] - 180);
   coin(A[canvas.width - 1]);
